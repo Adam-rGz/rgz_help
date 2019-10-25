@@ -8,6 +8,6 @@ ui_page 'client/html/UI.html'
 
 files{
     'client/html/UI.html',
-    'client/html/img/menu.png',
+    'client/html/img/menu.PNG',
     'client/html/style.css'
 }
