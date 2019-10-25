@@ -154,7 +154,6 @@
 		$.post('http://rgz_help/NUIFocusOff', JSON.stringify({}));
 	});
 	$(".menu li").click(function(){
-		console.log('click '+$(this).data('id'))
 		$('.container .page').hide();		
 		$('.container .page.'+$(this).data('id')).show();
 	});
