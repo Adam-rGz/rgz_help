@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="chart.min.js" type="text/javascript"></script>
+		 <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script> 		
+		<script>
+		$(function() {
+			/* open the UI for user */
+			window.addEventListener('message', function(event) {
+				if(event.data.type == "open"){
+					$('.pomoc').css('display', 'block')
+					$('body').css('display', 'block')
+					$('html').css('display', 'block')
+				} else if (event.data.type == "close"){
+					$('.pomoc').css('display', 'none')
+					$('body').css('display', 'none')
+					$('html').css('display', 'none')
+				}
+			});
+		});	
+		</script>
+	</head>
+
+    <body>	
+		<div class="pomoc">	
+			<div class="container main">
+				<div class="row">
+					<ul class="menu">
+						<li data-id="page-main">
+							<span>Strona główna - aktualności</span>
+						</li>						
+						<li data-id="page2">
+							<span>Sterowanie</span>
+						</li>				
+						<li data-id="page3">
+							<span>Komendy</span>
+						</li>
+						<li data-id="page4">
+							<span>Ustawienia mikrofonu</span>
+						</li>
+					</ul>
+					
+					<div id="close-help" class ="btn btn-danger" style="display: inline-block;">
+							<span>X</span>
+					</div>
+				</div>	
+				<div class=" page page-main">
+						<div class="row">
+							<div class="col-12">
+								<H1>Witaj na serwerze Casa-RP.pl</H1>
+								<p>Specjalnie dla Ciebie przygotowaliśmy ten oto panel pomocy, znajdziesz tutaj podstawowe informacje które pozwolą Ci swobodnie rozpocząć rozgrywkę na naszym serwerze.</p>
+								<br/>
+								<h2>Informacje</h2>
+								<p>Strona: <b></b>http://casa-rp.pl/</b></p><br/>
+								<p>Discord: <b>http://casa-rp.pl/discord</b></p><br/>
+								<p>Wszelkie informacje, regulaminy i pomoce znajdziesz na naszym discordzie. Życzymy miłej gry!</p><br/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-12"></div>
+							<div class="col-12  col-lg-12">
+								
+							</div>
+						</div>
+					</div>	
+				<div class=" page page2" style="display:none;">						
+						<h2>Key binding</h2>
+						<div class="row">
+							<div class="col-12 col-lg-4"><img src="img/menu.png"/></div>
+							<div class="col-12  col-lg-8">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie sapien vitae dui tristique pulvinar. Sed nibh odio, maximus ac nisi eleifend, iaculis ornare enim. Nulla euismod sem non turpis luctus, vehicula venenatis neque sagittis. Sed rutrum dui eget nunc vestibulum ornare.<br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1">X1</span> - Lorem ipsum dolor sit amet <br/>
+								<span class="btn btn-warning btn-sm mb-1">X1</span> - Lorem ipsum dolor sit amet <br/>
+								<span class="btn btn-warning btn-sm mb-1">X1</span> - Lorem ipsum dolor sit amet <br/>
+								<span class="btn btn-warning btn-sm mb-1">X1</span> - Lorem ipsum dolor sit amet <br/>
+								<span class="btn btn-warning btn-sm mb-1">Shift + X1</span> - Lorem ipsum dolor sit amet <br/>
+								<br/>							
+								<span class="btn btn-warning btn-sm mb-1">X1</span> - Lorem ipsum dolor sit amet <br/>
+								<span class="btn btn-warning btn-sm mb-1">X1</span> - Lorem ipsum dolor sit amet <br/>
+								<span class="btn btn-warning btn-sm mb-1">X1</span> - Lorem ipsum dolor sit amet <br/>
+								<br/>
+							</div>
+						</div>
+					</div>	
+					<div class=" page3 page"  style="display:none;">						
+						<div class="row">
+							<div class="col-12 col-lg-12">
+							<h2>Commands</h2></br>
+							<p>Lorem ipsum dolor sit amet</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<h3>Animacje</h3>
+								<pre><code style="background:">/e asd : Lorem ipsum dolor sit amet<br/>/e asd : Lorem ipsum dolor sit amet<br/>/e asd : Lorem ipsum dolor sit amet<br/>/e asd : Cheer<br/>/e asd : Lorem ipsum dolor sit amet<br/></code></pre>
+							</div>
+							<div class="col-12  col-lg-6">
+								<h3>Pozostałe</h3>								
+								<span class="btn btn-warning btn-sm mb-1 mb-1">/dolor</span> - Lorem ipsum dolor sit amet <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1">/dolor</span> - Lorem ipsum dolor sit amet <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1">/dolor</span> - Lorem ipsum dolor sit amet  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1">/dolor</span> - Lorem ipsum dolor sit amet  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1">/dolor</span> - Lorem ipsum dolor sit amet  <br/>
+								<br/>
+
+							
+								
+							</div>
+						</div>
+				</div>	
+				<div class=" page4 page"  style="display:none;">						
+					<div class="row">
+						<div class="col-12 col-lg-12">
+						<h2>Configuration</h2></br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie sapien vitae dui tristique pulvinar. Sed nibh odio, maximus ac nisi eleifend, iaculis ornare enim. Nulla euismod sem non turpis luctus, vehicula venenatis neque sagittis. Sed rutrum dui eget nunc vestibulum ornare.:</p><br/>
+							<img src="https://assets.vg247.com/current/2014/11/cover.jpgg" alt="ustawienia"/><br/><br/>
+							<p>
+								Configuration:<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>
+								- Pellentesque molestie sapien vitae dui<br/>						
+								<br/><br/>
+								<img src="https://img.gta5-mods.com/q95/images/the-best-graphics-configuration-quality-performance-jesuli_15/1d47e1-Sin%20t%C3%ADtulo.jpg" alt="omg"/>
+							</p>
+						</div>
+					</div>
+					
+			</div>	
+			</div>	 
+		</div>
+    </body>
+	
+	<script type="text/javascript">
+	$(".pulpit li span").click(function(){
+		$('.main.container > *').hide();		
+		$('.'+$(this).data('id')).show();
+
+	});
+	$(".close-dialog").click(function(){	
+		$('.dialog').hide();
+	});		
+	$("#close-help").click(function(){
+		$('.page').hide();
+		$('.page-main').show();
+		$.post('http://rgz_help/NUIFocusOff', JSON.stringify({}));
+	});
+	$(".menu li").click(function(){
+		console.log('click '+$(this).data('id'))
+		$('.container .page').hide();		
+		$('.container .page.'+$(this).data('id')).show();
+	});
+	document.onkeyup = function (data) {
+		if (data.which == 27) { // Escape key
+			$('.pomoc').css('display', 'none')
+			$.post('http://rgz_help/NUIFocusOff', JSON.stringify({}));
+		}
+	};
+	</script>
+</html>
