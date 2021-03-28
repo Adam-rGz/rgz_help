@@ -8,3 +8,4 @@ Everything should work, just copy-paste and change images (right now some random
 Use command ingame
 ```/help```
 
+more info at https://discord.gg/H4NavMDSHb
